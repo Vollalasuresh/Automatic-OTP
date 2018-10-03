@@ -1,0 +1,35 @@
+{
+  "name": "automatic-otp",
+  "version": "1.0.0",
+  "description": "This application is used to send the automatic otp",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vollalasuresh/Automatic-OTP.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vollalasuresh/Automatic-OTP/issues"
+  },
+  "homepage": "https://github.com/Vollalasuresh/Automatic-OTP#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.0",
+    "nexmo": "^2.4.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}

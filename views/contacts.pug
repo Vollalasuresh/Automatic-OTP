@@ -1,0 +1,8 @@
+extends base
+block content
+    div.list Wel Come to Contacts   
+        h4 Contacts
+        each i in x
+            a(href= `details/${i.id}`) #{i.first+" "+i.last}
+            br
+            

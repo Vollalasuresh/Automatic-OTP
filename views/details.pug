@@ -1,0 +1,9 @@
+extends base
+block content
+    div.details Wel Come to contacts Info Page
+        p Name: #{x.first} #{x.last}
+        p Number: #{x.phone}
+        a(href= `/sms/${x.id}`)
+            button(type="button") Send SMS
+
+    

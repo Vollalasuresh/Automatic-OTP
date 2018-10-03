@@ -1,0 +1,11 @@
+#!/usr/bin/nodejs
+var debug = require('debug')('Automatic-OTP');
+var app = require('../index');
+
+app.set('port', process.env.PORT || 5001);
+
+// console.log(port)
+var server = app.listen(app.get('port'), function() {
+  console.log(app.get('port'))
+  debug('Express server listening on port ' + server.address().port);
+});

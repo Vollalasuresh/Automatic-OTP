@@ -1,0 +1,23 @@
+extends base
+block content
+    div.sending Welcome TO send OTP Message
+    form(action="/sendsms", method="post" class="send")
+        label Name:
+        br
+        br
+        input(type='text' name='name' value=x.first+" "+x.last)
+        br
+        br
+        label To:
+        br
+        br
+        input(type="number", name="number" value="91"+x.phone)
+        br
+        br
+        label Message:
+        br
+        br
+        input(type="text", name="msg", value="Hi Your OTP is:"+otp)
+        br
+        br
+        input(type="submit", value="Send SMS")
