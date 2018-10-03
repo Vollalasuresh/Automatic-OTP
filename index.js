@@ -11,7 +11,6 @@ const dotenv=require('dotenv').config();
 
 //connecting to mongoDB
 mongoose.connect(process.env.DBURI,()=>console.log("Connected"))
-console.log(process.env.DBURI)
 
 const app= express();
 
